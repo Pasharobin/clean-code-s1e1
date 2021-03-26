@@ -114,7 +114,7 @@ label[for="new-task"] {
   width: 318px;
 }
 
-p > button:hover {
+.arr-btn:hover {
   color: #0fc57c;
 }
 
