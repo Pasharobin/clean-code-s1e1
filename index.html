@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Todo App</title>
+  <head>
+    <title>Todo App</title>
     <link
         href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
         rel="stylesheet">
@@ -12,38 +13,38 @@
   </head>
   <body>
     <header class="header">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <img class="header__image" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
       <a
-          class="information"
+          class="header__link"
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
     </header>
-    <main class="centered-element">
+    <main class="centered-element todo">
       <section id="adding-element">
         <label for="new-task">Add Item</label>
-        <div class="task-wrapper">
-          <input id="new-task" class="task" type="text">
-          <button class="add-btn">Add</button>
+        <div class="todo__task-wrapper">
+          <input id="new-task" class="todo__task" type="text">
+          <button class="todo__add-btn">Add</button>
         </div>
       </section>
       <section>
         <h3>Todo</h3>
         <ul id="incomplete-tasks">
           <li><input type="checkbox">
-            <label class="task">Pay Bills</label>
+            <label class="todo__task">Pay Bills</label>
             <input type="text">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <button class="todo__edit">Edit</button>
+            <button class="todo__delete">
               <img src="./remove.svg" alt="Delete button">
             </button>
           </li>
-          <li class="edit-mode">
+          <li class="todo__edit-mode">
             <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
+            <label class="todo__task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="todo__task">
+            <button class="todo__edit">Save</button>
+            <button class="todo__delete">
               <img src="./remove.svg" alt="Delete button">
             </button>
           </li>
@@ -53,10 +54,10 @@
         <h3>Completed</h3>
         <ul id="completed-tasks">
           <li><input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <label class="todo__task">See the Doctor</label>
+            <input type="text" class="todo__task">
+            <button class="todo__edit">Edit</button>
+            <button class="todo__delete">
               <img src="./remove.svg" alt="Delete button">
             </button>
           </li>
